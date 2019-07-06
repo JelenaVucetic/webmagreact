@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import Aux from '../../../hoc/Aux';
 import classes from './FullPost.css';
 import Image from '../../../assets/images/post-2.jpg';
+import Comments from '../Comments/Comments';
 
 class FullPost extends Component {
     state = {
@@ -40,10 +41,13 @@ class FullPost extends Component {
                         <button onClick={this.deletePostHandler} className="Delete">Delete</button>
                     </div>
                 </div>
-
             );
         }
-        return post;
+        return (
+            <Aux>       
+                {post}
+            </Aux>
+            );
     }
 }
 

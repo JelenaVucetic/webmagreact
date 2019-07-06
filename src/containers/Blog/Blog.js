@@ -12,6 +12,7 @@ import Tags from './Tags/Tags';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import Footer from '../../components/Footer/Footer';
+import Comments from '../Blog/Comments/Comments';
 
 class Blog extends Component {
     state = {
@@ -47,6 +48,7 @@ class Blog extends Component {
                     <Tags />
                 </div>        
             </div>
+            <Route path="/posts/:id" exact component={Comments} />
              <Footer />
              </Aux>
         );
