@@ -1,0 +1,60 @@
+.Footer {   
+    padding-bottom: 40px;
+    margin-top: 40px;
+
+}
+.Container {
+    padding-top: 80px;
+    border-top: 1px solid #F4f4f9;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3d455c;
+
+}
+
+.ColMd5 {
+    position: relative;
+    min-height: 1px;
+  
+}
+
+.ColMd5 ul {
+    list-style-type: none;
+    color: #a7b3c6;
+    padding: 0;
+}
+
+.ColMd5 li {
+    padding: 10px;
+}
+
+.ColMd4 {
+    display: flex;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.ColMd4 p {
+    color: #a7b3c6;
+}
+
+.ColMd3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

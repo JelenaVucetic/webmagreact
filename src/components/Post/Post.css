@@ -1,0 +1,41 @@
+.Post {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.Post h1 {
+    font-size: 20px;
+}
+
+.Post:hover,
+.Post:active {
+    background-color: #C0DDF5;
+    color: black;
+}
+
+.Body {
+    margin: 16px 0;
+    color: #ccc;
+}
+.Info {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Meta {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.Meta span {
+    background-color: #ff8700;
+    padding: 5px 15px;;
+    border-radius: 5px;
+}

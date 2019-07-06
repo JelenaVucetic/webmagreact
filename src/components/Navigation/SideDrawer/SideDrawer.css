@@ -1,0 +1,27 @@
+.SideDrawer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    max-width: 360px;
+    width: 90%;
+    padding: 80px 20px;
+    overflow-y: scroll;
+    z-index: 99;
+    background-color: rgb(243, 240, 240);
+    transition: 0.3s all;
+}
+
+.SideDrawer a {
+    text-decoration: none;
+    color: black;
+}
+
+.SideDrawer button {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 24px;
+    margin-left: 90%;
+}
