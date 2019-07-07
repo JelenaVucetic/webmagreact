@@ -1,0 +1,50 @@
+.Comments {
+    width: 65%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.Replay {
+    padding: 20px;
+}
+
+.Replay h2 {
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.Replay p {
+    margin: 0px 0px 20px;
+}
+
+.Replay div {
+    margin-bottom: 20px;
+}
+
+.Replay label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+.Replay input,
+.Replay textarea{
+    width: 40%;
+    height: 40px;
+    border: 2px solid #eceef2;
+    padding: 0px 15px;
+}
+
+.Replay button {
+    padding: 9px 45px;
+    border: none;
+    background-color: #212631;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: 0.2s opacity;
+    color: white;
+    margin-top: 10px;
+}
+

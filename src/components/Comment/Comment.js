@@ -1,12 +1,19 @@
 import React from 'react';
 
 import classes from'./Comment.css';
+import authImage from '../../assets/images/author.png'
 
 const comment = (props) => (
     <div className={classes.Comment}>
-       <h3>{props.body}</h3>
-       <p>{props.author}</p>
-       <p>{props.date}</p>
+        <div>
+        <img src={authImage} alt='img' />
+        </div>
+        <div className={classes.Content}>
+            <h4>{props.author}</h4>
+            <span>{props.date}</span>
+            <span>replay</span>
+            <p>{props.body}</p>
+            </div>
     </div>
 );
 
