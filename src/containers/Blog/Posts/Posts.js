@@ -44,6 +44,7 @@ class Posts extends Component {
                     title={post.title} 
                     body={post.body}
                     image={post.image}
+                    category={post.category}
                     clicked={() => this.postSelectedHandler(post.id)} />
                 </Link>);
             });

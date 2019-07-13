@@ -21,12 +21,21 @@ class Categories extends Component {
                 // this.setState({error: true});
             });
     }
+
+    categorySelectedHandler = (id) => {
+        this.setState({selectedCatId: id});
+    }
+
     
     render () {
         const categories = this.state.categories.map(category => {
-            return <Category 
-                        key={category.id}
-                        name={category.name}/>;
+            return (
+            <Link to={'/category/' + category.id}  key={category.id}>
+                <Category 
+                    clicked={() => this.categorySelectedHandler(category.id) } 
+                    name={category.name}/>
+            </Link>
+            );
         })
 
         return (

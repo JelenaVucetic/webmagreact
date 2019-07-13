@@ -18,6 +18,10 @@
     padding-bottom: 10px;
     border-bottom: 1px solid #eceef2;
     margin-left: 0;
+    font-weight: 600;
+    color: #212631;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .Category ul li > a {
@@ -25,11 +29,9 @@
     transition: 0.2s color;
 }
 
-.Category a {
-    font-weight: 600;
-    color: #212631;
-    text-decoration: none;
-    background-color: transparent;
+.Category:hover,
+.Category:active {
+    background-color: #ff8700;
 }
 
 .Category  span {

@@ -3,7 +3,6 @@ import axios from 'axios';
 import Aux from '../../../hoc/Aux';
 import classes from './FullPost.css';
 import Image from '../../../assets/images/post-2.jpg';
-import Comments from '../Comments/Comments';
 
 class FullPost extends Component {
     state = {

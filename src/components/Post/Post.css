@@ -7,6 +7,7 @@
     margin: 10px;
     box-sizing: border-box;
     cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .Post h1 {
@@ -21,7 +22,7 @@
 
 .Body {
     margin: 16px 0;
-    color: #ccc;
+    color: rgb(34, 33, 33);
 }
 .Info {
     padding-left: 10px;

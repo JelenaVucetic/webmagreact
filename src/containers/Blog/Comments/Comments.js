@@ -40,7 +40,7 @@ class Comments extends Component {
             </section>
 
             <section className={classes.Replay}>
-                <h2>Leave A Replay</h2>
+                <h2>Leave A Reply</h2>
                 <p>your email address will not be published. required fields are marked *</p>
                 <form>
                 <div>

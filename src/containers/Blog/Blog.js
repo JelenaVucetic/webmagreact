@@ -13,6 +13,7 @@ import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import Footer from '../../components/Footer/Footer';
 import Comments from '../Blog/Comments/Comments';
+import Test from '../Blog/Test/Test';
 
 class Blog extends Component {
     state = {
@@ -35,7 +36,8 @@ class Blog extends Component {
                      <h4>Welcome</h4>
                  </header>
             <div className={classes.Blog}>
-                <Toolbar clicked={this.sideDrawerOpenHandler}/>
+                <Toolbar 
+                    clicked={this.sideDrawerOpenHandler}/>
                 <SideDrawer show={this.state.showSideDrawer} clicked={this.sideDrawerClosedHandler} />
                 
                 {/* <Route path="/" exact render={() => <h1>Home</h1>} />
@@ -43,8 +45,9 @@ class Blog extends Component {
                 <Route path="/" exact component={Posts} />
                 <Route path="/new-post" component={NewPost} />
                 <Route path="/posts/:id" exact component={FullPost} />
+                <Route path="/category/:id" exact component={Test} />
                 <div className={classes.Cat}>
-                    <Categories />
+                    <Categories/>
                     <Tags />
                 </div>        
             </div>

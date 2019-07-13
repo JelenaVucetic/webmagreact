@@ -3,12 +3,11 @@ import React from 'react';
 import classes from'./Category.css';
 
 const category = (props) => (
-    <div className={classes.Category}>
+    <div className={classes.Category}  onClick={props.clicked}>
         <ul>
             <li> 
-                <a href="/">{props.name} 
-                    <span>240</span>
-                </a>
+                {props.name} 
+                <span>240</span>
             </li>
         </ul>
        
