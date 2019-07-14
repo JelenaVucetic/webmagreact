@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
-import { Route, Link } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Aux from '../../hoc/Aux';
 import classes from './Blog.css';
@@ -17,8 +17,10 @@ import Test from '../Blog/Test/Test';
 
 class Blog extends Component {
     state = {
-        showSideDrawer: false
+        showSideDrawer: false,
+        auth: false
     }
+
     sideDrawerOpenHandler = () => {
         this.setState({showSideDrawer:true});
     }
@@ -42,10 +44,15 @@ class Blog extends Component {
                 
                 {/* <Route path="/" exact render={() => <h1>Home</h1>} />
                 <Route path="/" render={() => <h1>Home 2</h1>} /> */}
-                <Route path="/" exact component={Posts} />
-                <Route path="/new-post" component={NewPost} />
+
+                <Switch>
+                <Route path="/posts" exact component={Posts} />
+                {this.state.auth ? <Route path="/new-post" component={NewPost} /> : null}
                 <Route path="/posts/:id" exact component={FullPost} />
                 <Route path="/category/:id" exact component={Test} />
+                {/* <Route render={() => <h1>Not found</h1>} />  */}
+                <Redirect from='/' to='/posts' />
+                </Switch>
                 <div className={classes.Cat}>
                     <Categories/>
                     <Tags />

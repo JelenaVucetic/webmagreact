@@ -17,8 +17,7 @@ class Posts extends Component {
                 const posts = response.data.slice(0, 4);
                 const updatedPosts = posts.map(post => {
                     return {
-                        ...post,
-                        author: 'Max'
+                        ...post
                     }
                 });
                 this.setState({posts: updatedPosts});
@@ -31,7 +30,7 @@ class Posts extends Component {
     }
 
     postSelectedHandler = (id) => {
-        this.setState({selectedPostId: id});
+        this.props.history.push('/posts/' + id);
     }
     
     render () {

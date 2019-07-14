@@ -29,11 +29,6 @@
     transition: 0.2s color;
 }
 
-.Category:hover,
-.Category:active {
-    background-color: #ff8700;
-}
-
 .Category  span {
     background-color: #4BB92F;
     float: right;

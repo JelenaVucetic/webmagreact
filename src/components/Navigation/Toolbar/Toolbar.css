@@ -44,7 +44,7 @@
 
 .NavBtns {
     display: flex;
-    width: 10%;
+    width: 20%;
     align-items: center;
     justify-content: space-around;
 }

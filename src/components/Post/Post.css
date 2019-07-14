@@ -17,7 +17,7 @@
 .Post:hover,
 .Post:active {
     background-color: #C0DDF5;
-    color: black;
+    color: #fa923f;;
 }
 
 .Body {
@@ -36,7 +36,7 @@
 }
 
 .Meta span {
-    background-color: #ff8700;
+    background-color: #f3d1bb;
     padding: 5px 15px;;
     border-radius: 5px;
 }

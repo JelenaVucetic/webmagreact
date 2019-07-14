@@ -4,8 +4,8 @@
 
 }
 .Container {
-    padding-top: 80px;
-    border-top: 1px solid #F4f4f9;
+    padding-top: 40px;
+    border-top: 1px solid rgb(205, 205, 223);
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -32,7 +32,7 @@
 
 .ColMd5 ul {
     list-style-type: none;
-    color: #a7b3c6;
+    color: rgb(205, 205, 223);
     padding: 0;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .ColMd4 p {
-    color: #a7b3c6;
+    color: rgb(205, 205, 223);
 }
 
 .ColMd3 {
